@@ -1,7 +1,7 @@
 # ft_printf
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit/)
-![Project Status](https://img.shields.io/badge/status-complete-brightgreen.svg)
+[![Project Status](https://img.shields.io/badge/status-complete-brightgreen.svg)]
 
 ## Description
 
