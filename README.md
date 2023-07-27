@@ -1,8 +1,7 @@
 # ft_printf
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit/)
-[![Build Status](https://travis-ci.com/williamroocha/ft_printf.svg?branch=master)](https://travis-ci.com/williamroocha/ft_printf)
-[![codecov](https://codecov.io/gh/williamroocha/ft_printf/branch/master/graph/badge.svg)](https://codecov.io/gh/williamroocha/ft_printf)
+![Project Status](https://img.shields.io/badge/status-complete-brightgreen.svg)
 
 ## Description
 
