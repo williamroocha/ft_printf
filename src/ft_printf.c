@@ -6,11 +6,11 @@
 /*   By: wiferrei <wiferrei@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 14:23:45 by wiferrei          #+#    #+#             */
-/*   Updated: 2023/04/27 09:14:39 by wiferrei         ###   ########.fr       */
+/*   Updated: 2023/07/27 19:46:13 by wiferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../includes/ft_printf.h"
 
 void	ft_types(char *str, va_list args, int i, long int *chr_total)
 {

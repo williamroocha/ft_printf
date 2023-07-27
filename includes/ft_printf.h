@@ -6,7 +6,7 @@
 /*   By: wiferrei <wiferrei@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 14:24:06 by wiferrei          #+#    #+#             */
-/*   Updated: 2023/04/27 09:16:05 by wiferrei         ###   ########.fr       */
+/*   Updated: 2023/07/27 19:22:46 by wiferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,5 @@ void	ft_putadd(unsigned long int nbr, long int *chr_total, int x);
 void	ft_putnbr(int nbr, long int *chr_total);
 void	ft_putstr(char *str, long int *chr_total);
 void	ft_unsgint(unsigned int nbr, long int *chr_total);
+
 #endif

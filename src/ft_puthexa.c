@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_puthexa.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wiferrei <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: wiferrei <wiferrei@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 16:02:02 by wiferrei          #+#    #+#             */
-/*   Updated: 2023/04/26 16:02:04 by wiferrei         ###   ########.fr       */
+/*   Updated: 2023/07/27 19:46:46 by wiferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../includes/ft_printf.h"
 
 void	ft_puthexa(unsigned int nbr, long int *chr_total, int loworup)
 {

@@ -1,33 +1,57 @@
-SOURCEFILES	= 	ft_printf.c ft_putchar.c ft_unsgint.c\
-				ft_putstr.c ft_puthexa.c ft_putnbr.c ft_putadd.c
+# Directories
+SRCDIR      = src
+INCDIR      = includes
+OBJDIR      = obj
 
-OBJECTS	= $(SOURCEFILES:.c=.o)
+# Source files
+SOURCEFILES = $(addprefix $(SRCDIR)/, \
+    ft_printf.c \
+    ft_putadd.c \
+    ft_putchar.c \
+    ft_puthexa.c \
+    ft_putnbr.c \
+    ft_putstr.c \
+    ft_unsgint.c\
+)
 
-NAME	= libftprintf.a
+# Add here the object files
+OBJECTS     = $(patsubst $(SRCDIR)/%.c,$(OBJDIR)/%.o,$(SOURCEFILES))
 
-COMPILER		= cc
+# Output library
+NAME        = libftprintf.a
 
-RM		= rm -f
-FLAGS	= -Wall -Wextra -Werror
+# Compiler and flags
+COMPILER    = cc
+FLAGS       = -Wall -Wextra -Werror
 
-.PHONY: all, clean, fclean, re
+# Remove command
+RM          = rm -f
 
-all: $(NAME) 
+# Phony targets
+.PHONY: all clean fclean re
 
-${NAME} : ${OBJECTS}
-	ar -rcs $(NAME) $(OBJECTS)
+# Default target
+all: $(NAME)
 
+# Target to build library
+$(NAME): $(OBJECTS)
+	@ar -rcs $(NAME) $(OBJECTS)
+	@echo "ft_printf compiled"
 
-%.o : %.c
-	${COMPILER} ${FLAGS} -c $< -o $@
+# Pattern rule for object files
+$(OBJDIR)/%.o: $(SRCDIR)/%.c
+	@mkdir -p $(OBJDIR)
+	@$(COMPILER) $(FLAGS) -c $< -o $@
 
+# Clean object files
 clean:
-	${RM} ${OBJECTS} 
+	@$(RM) -r $(OBJDIR)
+	@echo "Objects removed"
 
+# Clean object files and library
 fclean: clean
-	${RM} ${NAME}
+	@$(RM) $(NAME)
+	@echo "ft_printf removed"
 
+# Rebuild everything
 re: fclean all
-
-teste: re 
-	${COMPILER} ${FLAGS} main.c -L. -lftprintf

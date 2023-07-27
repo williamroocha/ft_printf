@@ -1,86 +1,70 @@
-# ft_printf (My Second Project of 42 Lisboa)
-
-![Project Image](project-image-url)
-
-> This is a ReadMe template to help save you time and effort.
-
----
-
-### Table of Contents
-You're sections headers will be used to reference location of destination.
-
-- [Description](#description)
-- [How To Use](#how-to-use)
-- [References](#references)
-- [License](#license)
-- [Author Info](#author-info)
-
----
+# ft_printf
 
 ## Description
 
-Creating ReadMe's for your Github repository can be tedious.  I hope this template can save you time and effort as well as provide you with some consistency across your projects.
+ft_printf is a custom implementation of the printf function in C. It allows you to format and print data to the standard output.
 
-#### Technologies
+## Table of Contents
 
-- Technology 1
-- Technology 2
+- [Usage](#usage)
+- [Installation](#installation)
+- [Examples](#examples)
+- [Contributing](#contributing)
+- [License](#license)
 
-[Back To The Top](#read-me-template)
+## Usage
 
----
+To use the ft_printf function, include the `ft_printf.h` header in your C source file:
 
-## How To Use
-
-#### Installation
-
-
-
-#### API Reference
-
-```html
-    <p>dummy code</p>
+```c
+#include "ft_printf.h"
 ```
-[Back To The Top](#read-me-template)
 
----
+Then, you can call the ft_printf function with format specifiers similar to the standard printf function:
 
-## References
-[Back To The Top](#read-me-template)
+```c
+ft_printf("Hello, %s!\n", "world");
+```
 
----
+## Installation
+
+To use this ft_printf library in your project, follow these steps:
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/williamroocha/ft_printf.git
+```
+
+2. Copy the libftprintf.a library and the ft_printf.h header into your project's directory.
+
+3. Include the ft_printf.h header in your C source file:
+    
+```c
+#include "ft_printf.h"
+```
+
+4. Compile your project with the library:
+
+```bash
+cc -I./your-includes-directory -L./your-lib-directory -lftprintf main.c -o your_executable
+```
+replace `your-includes-directory` and `your-lib-directory` with the directories where you copied the ft_printf.h header and the libftprintf.a library, respectively.
+
+## Examples
+
+```c
+#include "ft_printf.h"
+
+int main() {
+    ft_printf("Hello, %s!\n", "world");
+    ft_printf("The answer is %d.\n", 42);
+    return 0;
+}
+```
+
+## Contributing
+Contributions to this project are welcome! If you find any issues or want to add new features or improvements, please open a pull request or an issue.
 
 ## License
-
-MIT License
-
-Copyright (c) [2017] [James Q Quick]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-[Back To The Top](#read-me-template)
-
----
-
-## Author Info
-
-- Twitter - [@jamesqquick](https://twitter.com/jamesqquick)
-- Website - [James Q Quick](https://jamesqquick.com)
-
-[Back To The Top](#read-me-template)
+This project is licensed under the terms of the [MIT license](https://opensource.org/license/mit/)
