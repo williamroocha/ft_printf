@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit/)
 [![Build Status](https://img.shields.io/badge/status-complete-brightgreen.svg)](https://travis-ci.com/williamroocha/ft_printf)
-[![Build Status](https://img.shields.io/badge/42-2021-blue.svg)](https://42lisboa.com/)
+[![Build Status](https://img.shields.io/badge/42-2023-blue.svg)](https://42lisboa.com/)
 
 ## Description
 
