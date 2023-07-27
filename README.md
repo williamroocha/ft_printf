@@ -2,7 +2,7 @@
 
 ## Description
 
-ft_printf is a custom implementation of the printf function in C. It allows you to format and print data to the standard output.
+ft_printf is a project of the [42 Lisboa](https://42lisboa.com/) software engineering program. The goal of this project is to recode the standard C library printf function.
 
 ## Table of Contents
 
