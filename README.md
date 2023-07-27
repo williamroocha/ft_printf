@@ -1,5 +1,9 @@
 # ft_printf
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit/)
+[![Build Status](https://travis-ci.com/williamroocha/ft_printf.svg?branch=master)](https://travis-ci.com/williamroocha/ft_printf)
+[![codecov](https://codecov.io/gh/williamroocha/ft_printf/branch/master/graph/badge.svg)](https://codecov.io/gh/williamroocha/ft_printf)
+
 ## Description
 
 ft_printf is a project of the <a href="https://42lisboa.com/" target="_blank" rel="noopener noreferrer">42 Lisboa</a> software engineering program. The goal of this project is to recode the standard C library printf function.
