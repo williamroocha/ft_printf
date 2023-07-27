@@ -2,7 +2,7 @@
 
 ## Description
 
-ft_printf is a project of the <a href="https://42lisboa.com/" target="_blank">42 Lisboa</a> software engineering program. The goal of this project is to recode the standard C library printf function.
+ft_printf is a project of the <a href="https://42lisboa.com/" target="_blank" rel="noopener noreferrer">42 Lisboa</a> software engineering program. The goal of this project is to recode the standard C library printf function.
 
 ## Table of Contents
 
