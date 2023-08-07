@@ -45,7 +45,7 @@ git clone https://github.com/williamroocha/ft_printf.git
 3. Include the ft_printf.h header in your C source file:
     
 ```c
-#include "ft_printf.h"
+#include "path_to_your_ft_printf/includes/ft_printf.h"
 ```
 
 4. Compile your project with the library:
@@ -58,7 +58,7 @@ replace `your-includes-directory` and `your-lib-directory` with the directories 
 ## Examples
 
 ```c
-#include "ft_printf.h"
+#include "../ft_printf/includes/ft_printf.h"
 
 int main() {
     ft_printf("Hello, %s!\n", "world");
